@@ -1,28 +1,21 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Bar, Line, Pie} from 'react-chartjs-2';
 
-const  Chart = ({chartData}) => { 
+const  Chart = ({chartData, displayTitle=true, displayLegend=true,legendPosition ='right',location='City' }) => { 
   
-  defaultProps = {
-    displayTitle:true,
-    displayLegend: true,
-    legendPosition:'right',
-    location:'City'
-  }
-
     return (
       <div className="chart">
         <Bar
           data={chartData}
           options={{
             title:{
-              display:this.props.displayTitle,
-              text:'Largest Cities In '+this.props.location,
+              display: displayTitle,
+              text:'Largest Cities In '+location,
               fontSize:25
             },
             legend:{
-              display:displayLegend,
-              position:legendPosition
+              display: displayLegend,
+              position: legendPosition
             }
           }}
         />
@@ -31,13 +24,13 @@ const  Chart = ({chartData}) => {
           data={chartData}
           options={{
             title:{
-              display:displayTitle,
+              display: displayTitle,
               text:'Largest Cities In '+location,
               fontSize:25
             },
             legend:{
-              display:displayLegend,
-              position:legendPosition
+              display: displayLegend,
+              position: legendPosition
             }
           }}
         />
@@ -51,8 +44,8 @@ const  Chart = ({chartData}) => {
               fontSize:25
             },
             legend:{
-              display:displayLegend,
-              position:legendPosition
+              display: displayLegend,
+              position: legendPosition
             }
           }}
         />

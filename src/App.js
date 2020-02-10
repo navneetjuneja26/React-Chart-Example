@@ -10,8 +10,7 @@ const  App = ()=> {
 
  const  getChartData = ()=> {
     setchartData({ 
-
-      chartData: {  labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
+        labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
         datasets:[
           {
             label:'Population',
@@ -33,7 +32,7 @@ const  App = ()=> {
               'rgba(255, 99, 132, 0.6)'
             ]
           }
-        ] }
+        ] 
       }
     );
   }
@@ -46,11 +45,7 @@ const  App = ()=> {
 
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom"/>
+        <Chart chartData={chartData} location="Massachusetts" legendPosition="bottom"/>
       </div>
     );
 }
