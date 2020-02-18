@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import Chart from './components/Chart';
 
@@ -28,6 +28,26 @@ const  App = ()=> {
               'rgba(255, 206, 86, 0.6)',
               'rgba(75, 192, 192, 0.6)',
               'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 64, 0.6)',
+              'rgba(255, 99, 132, 0.6)'
+            ]
+          },
+          {
+            label:'Animal',
+            data:[
+              61754,
+              181045,
+              153060,
+              10619,
+              105162,
+              950072
+            ],
+            backgroundColor:[
+              'rgba(05, 99, 132, 0.6)',
+              'rgba(0, 162, 235, 0.6)',
+              'rgba(255, 206, 86, 0.6)',
+              'rgba(75, 192, 192, 0.6)',
+              'rgba(3, 102, 255, 0.6)',
               'rgba(255, 159, 64, 0.6)',
               'rgba(255, 99, 132, 0.6)'
             ]
